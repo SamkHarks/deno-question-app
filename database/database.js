@@ -3,7 +3,11 @@ import { Pool } from "../deps.js";
 
 const CONCURRENT_CONNECTIONS = 2;
 const connectionPool = new Pool({
-  //Add db information here
+  hostname: Deno.env.get("HOSTNAME") ?? "",
+  database: Deno.env.get("DATABASE") ?? "",
+  user: Deno.env.get("USER") ?? "",
+  password: Deno.env.get("PASSWORD") ?? "",
+  port: Deno.env.get("PORT") ?? 0,
 }, CONCURRENT_CONNECTIONS);
 
 
