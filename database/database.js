@@ -2,7 +2,8 @@ import { Pool } from "../deps.js";
 
 
 const CONCURRENT_CONNECTIONS = 2;
-const connectionPool = new Pool({  
+const connectionPool = new Pool({
+  //Add db information here
 }, CONCURRENT_CONNECTIONS);
 
 
