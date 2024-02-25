@@ -1,19 +1,16 @@
-# wsd-project II
+# wsd-project
 
 ## Description of the app
 
-This is a quiz app where you can answer questions created by other users. 
+This is a simple quiz app where you can answer questions created by other users. 
 You can also create your own questions for other users.
-
-This app is done following the guideline from the project-handout: https://wsd.cs.aalto.fi/26-course-project-ii/1-project-handout/
 
 ## Running the app
 
 The app can be run online or locally
 
 ### Online location of the app
-App can be tested at online from the following link: https://deno-questionapp.herokuapp.com/
-
+App can be tested at online from the following link
 
 ### Running locally
 
@@ -51,7 +48,7 @@ CREATE TABLE question_answers (
 CREATE UNIQUE INDEX ON users((lower(email)));
 
 #### Configuration
-Add your db configuration as usually straight to database/database.js 
+Add your db configuration to database/database.js 
 
 ### Running app
 Run from root folder:
@@ -59,13 +56,3 @@ deno run --allow-all --unstable run-locally.js
 
 ## Testing app
 deno test --allow-all --unstable
-
-Two tests require some database information to work:
-In the file located at .tests/routes/apis/questionApi_test.js 
-the second test currently uses .send('{"questionId":"19", "optionId":"54"}')
-You just need to set questionId & optionId to correct answer option from YOUR db so that this test works as expected.
-
-In the file located at ./tests/routes/controllers/loginController_test.js
-The first test expects that email = test@mail.com and password = test can be found from db.
-
-Second test expects that email = null@mail.com and password = null cannot be found from db.
