@@ -2,7 +2,7 @@
 
 ## Description of the app
 
-This is a simple quiz app where you can answer questions created by other users. 
+This is a simple multiple-page application (MPA), quiz app where you can answer questions created by other users. 
 You can also create your own questions for other users.
 
 ## Running the app
