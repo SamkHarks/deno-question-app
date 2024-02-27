@@ -1,7 +1,4 @@
-# wsd-project
-
-
-# Deno Question App
+# wsd-project, question App
 
 ## Description
 
