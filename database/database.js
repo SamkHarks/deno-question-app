@@ -7,7 +7,7 @@ const connectionPool = new Pool({
   database: Deno.env.get("DATABASE") ?? "",
   user: Deno.env.get("USER") ?? "",
   password: Deno.env.get("PASSWORD") ?? "",
-  port: Deno.env.get("PORT") ?? 0,
+  port: Deno.env.get("DBPORT") ?? 0,
 }, CONCURRENT_CONNECTIONS);
 
 
