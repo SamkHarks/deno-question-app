@@ -1,4 +1,4 @@
-# wsd-project, question App
+# wsd-project, Question App
 
 ## Description
 
